@@ -16,12 +16,10 @@
   $max = 0;
 
   for ($i=0; $i < 5; $i++) {
-    for ($j=0; $j < 4; $j++) {
-      if ($matriz5por4[$i][$j] < $min) {
-        $min = $matriz5por4[$i][$j];
-      } else if ($matriz5por4[$i][$j] > $max) {
-        $max = $matriz5por4[$i][$j];
-      }
+    if (min($matriz5por4[$i]) < $min) {
+      $min = min($matriz5por4[$i]);
+    } else if (max($matriz5por4[$i]) > $max) {
+      $max = max($matriz5por4[$i]);
     }
   }
 
