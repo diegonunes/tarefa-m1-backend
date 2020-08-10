@@ -40,7 +40,7 @@
     $idade[$key] = $value['idade'];
   }
 
-  array_multisort($idade, SORT_DESC, $usuarios);
+  array_multisort($idade, SORT_ASC, $usuarios);
   print_r($usuarios);
 
 ?>
